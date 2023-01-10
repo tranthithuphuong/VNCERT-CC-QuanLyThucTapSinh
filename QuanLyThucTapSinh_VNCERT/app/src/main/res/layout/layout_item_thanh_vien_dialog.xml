@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/bg_white_radius_30"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#016463"
+        android:text="Thông tin thực tập sinh"
+        android:gravity="center"
+        android:background="@drawable/bg_yellow_radius_30_top_left_right"
+        />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="35dp"
+        android:text="Mã loại: tạo dữ liệu"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ed_dialog"
+        android:padding="12dp"
+        android:hint="Nhập tên thành viên"
+        android:textSize="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_numberphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ed_dialog"
+        android:padding="12dp"
+        android:hint="Nhập số điện thoại"
+        android:textSize="14dp"
+        android:inputType="number"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ed_dialog"
+        android:padding="12dp"
+        android:hint="Nhập gmail"
+        android:textSize="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ed_dialog"
+        android:padding="12dp"
+        android:hint="Nhập địa chỉ"
+        android:textSize="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="35dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính: "
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/rdo_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="14dp"
+            android:textColor="#717171"
+            android:text="Nam"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="14dp"
+            android:textColor="#717171"
+            android:text="Nữ"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_dialog"
+            android:layout_gravity="center"
+            android:textColor="#F6F10D"
+            />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="SEND"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_btn_dialog"
+            android:layout_gravity="center"
+            android:textColor="#F6F10D"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
